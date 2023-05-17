@@ -1,4 +1,6 @@
-t = 'int'
+import numpy as np
+
+t = 'float'
 n = list()
 for s in input().split():
     if s.isdigit():
@@ -6,4 +8,5 @@ for s in input().split():
     else:
         t = s
 
-print(n, t)
+Z = np.zeros(n, dtype=t)
+print(Z)
